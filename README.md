@@ -24,5 +24,6 @@ Zekatmatik, modern bir web arayüzü üzerinden kullanıcıların varlıkların�
     - Dinamik DOM manipülasyonu.
     - Matematiksel hesaplama algoritmaları.
 - **API Service:** [CollectAPI](https://collectapi.com/) - Gold & Economy API.
+- https://ismailemiragrbas07-stack.github.io/zekat-hesaplama/
 
 
