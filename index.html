@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zekatmatik | Iso</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h2>Zekat Hesaplama Sistemi</h2>
+            <div class="live-info">
+                <span id="gold-price-text">Fiyatlar yükleniyor...</span><br>
+                <small id="nisab-text">Nisab: Hesaplanıyor...</small>
+            </div>
+        </header>
+
+        <div class="form-grid">
+            <div class="input-group"><label>Nakit (TL)</label><input type="number" id="cash" placeholder="0"></div>
+            <div class="input-group"><label>Dolar ($)</label><input type="number" id="usd" placeholder="0"></div>
+            <div class="input-group"><label>Euro (€)</label><input type="number" id="eur" placeholder="0"></div>
+            <div class="input-group"><label>Gram Altın</label><input type="number" id="goldGram" placeholder="0"></div>
+            <div class="input-group"><label>Çeyrek (Adet)</label><input type="number" id="ceyrek" placeholder="0"></div>
+            <div class="input-group"><label>Yarım (Adet)</label><input type="number" id="yarim" placeholder="0"></div>
+            <div class="input-group"><label>Ata Altın (Adet)</label><input type="number" id="ata" placeholder="0"></div>
+            <div class="input-group"><label>Gümüş (Gram)</label><input type="number" id="silver" placeholder="0"></div>
+            
+            <div class="input-group full-width border-top">
+                <label>Toplam Borç (TL)</label>
+                <input type="number" id="debts" placeholder="0">
+            </div>
+
+            <button class="full-width" onclick="calculateZakat()">Hesaplamayı Yap</button>
+        </div>
+
+        <div id="result-box" class="result" style="display:none;">
+            <h3>Zekat Miktarınız</h3>
+            <div class="amount-display"><span id="zakatAmount">0</span> <small>TL</small></div>
+            <p id="status-message"></p>
+        </div>
+
+        <footer>
+            <div class="footer-content">
+                <p>&copy; 2026 Tüm Hakları Saklıdır.</p>
+                <p>Design by <strong>Ismail Emir AĞIRBAŞ</strong></p>
+                <p class="contact">İletişim: <a href="mailto:ismailemiragrbas.07@gmail.com">ismailemiragrbas.07@gmail.com</a></p>
+            </div>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
